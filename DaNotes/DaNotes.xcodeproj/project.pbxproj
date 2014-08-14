@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		952FDBF6199C4C6F0058529A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF5199C4C6F0058529A /* Foundation.framework */; };
+		952FDBF8199C4C6F0058529A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF7199C4C6F0058529A /* CoreGraphics.framework */; };
+		952FDBFA199C4C6F0058529A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF9199C4C6F0058529A /* UIKit.framework */; };
+		952FDBFC199C4C6F0058529A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBFB199C4C6F0058529A /* CoreData.framework */; };
+		952FDC02199C4C6F0058529A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 952FDC00199C4C6F0058529A /* InfoPlist.strings */; };
+		952FDC04199C4C6F0058529A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 952FDC03199C4C6F0058529A /* main.m */; };
+		952FDC08199C4C6F0058529A /* DNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 952FDC07199C4C6F0058529A /* DNAppDelegate.m */; };
+		952FDC0B199C4C6F0058529A /* DaNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 952FDC09199C4C6F0058529A /* DaNotes.xcdatamodeld */; };
+		952FDC0D199C4C6F0058529A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952FDC0C199C4C6F0058529A /* Images.xcassets */; };
+		952FDC14199C4C6F0058529A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDC13199C4C6F0058529A /* XCTest.framework */; };
+		952FDC15199C4C6F0058529A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF5199C4C6F0058529A /* Foundation.framework */; };
+		952FDC16199C4C6F0058529A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF9199C4C6F0058529A /* UIKit.framework */; };
+		952FDC17199C4C6F0058529A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBFB199C4C6F0058529A /* CoreData.framework */; };
+		952FDC1F199C4C6F0058529A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 952FDC1D199C4C6F0058529A /* InfoPlist.strings */; };
+		952FDC21199C4C6F0058529A /* DaNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 952FDC20199C4C6F0058529A /* DaNotesTests.m */; };
+		952FDC2C199C4CEF0058529A /* DNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952FDC2B199C4CEF0058529A /* DNRootViewController.m */; };
+		952FDC2E199C4E570058529A /* DaNotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952FDC2D199C4E570058529A /* DaNotes.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		952FDC18199C4C6F0058529A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 952FDBEA199C4C6F0058529A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952FDBF1199C4C6F0058529A;
+			remoteInfo = DaNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		952FDBF2199C4C6F0058529A /* DaNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		952FDBF5199C4C6F0058529A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		952FDBF7199C4C6F0058529A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		952FDBF9199C4C6F0058529A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		952FDBFB199C4C6F0058529A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		952FDBFF199C4C6F0058529A /* DaNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaNotes-Info.plist"; sourceTree = "<group>"; };
+		952FDC01199C4C6F0058529A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		952FDC03199C4C6F0058529A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		952FDC05199C4C6F0058529A /* DaNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DaNotes-Prefix.pch"; sourceTree = "<group>"; };
+		952FDC06199C4C6F0058529A /* DNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAppDelegate.h; sourceTree = "<group>"; };
+		952FDC07199C4C6F0058529A /* DNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAppDelegate.m; sourceTree = "<group>"; };
+		952FDC0A199C4C6F0058529A /* DaNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DaNotes.xcdatamodel; sourceTree = "<group>"; };
+		952FDC0C199C4C6F0058529A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		952FDC12199C4C6F0058529A /* DaNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		952FDC13199C4C6F0058529A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		952FDC1C199C4C6F0058529A /* DaNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaNotesTests-Info.plist"; sourceTree = "<group>"; };
+		952FDC1E199C4C6F0058529A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		952FDC20199C4C6F0058529A /* DaNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaNotesTests.m; sourceTree = "<group>"; };
+		952FDC2A199C4CEF0058529A /* DNRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNRootViewController.h; path = Source/DNRootViewController.h; sourceTree = "<group>"; };
+		952FDC2B199C4CEF0058529A /* DNRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNRootViewController.m; path = Source/DNRootViewController.m; sourceTree = "<group>"; };
+		952FDC2D199C4E570058529A /* DaNotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DaNotes.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952FDBEF199C4C6F0058529A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952FDBF8199C4C6F0058529A /* CoreGraphics.framework in Frameworks */,
+				952FDBFC199C4C6F0058529A /* CoreData.framework in Frameworks */,
+				952FDBFA199C4C6F0058529A /* UIKit.framework in Frameworks */,
+				952FDBF6199C4C6F0058529A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952FDC0F199C4C6F0058529A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952FDC14199C4C6F0058529A /* XCTest.framework in Frameworks */,
+				952FDC17199C4C6F0058529A /* CoreData.framework in Frameworks */,
+				952FDC16199C4C6F0058529A /* UIKit.framework in Frameworks */,
+				952FDC15199C4C6F0058529A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		952FDBE9199C4C6F0058529A = {
+			isa = PBXGroup;
+			children = (
+				952FDBFD199C4C6F0058529A /* DaNotes */,
+				952FDC1A199C4C6F0058529A /* DaNotesTests */,
+				952FDBF4199C4C6F0058529A /* Frameworks */,
+				952FDBF3199C4C6F0058529A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		952FDBF3199C4C6F0058529A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				952FDBF2199C4C6F0058529A /* DaNotes.app */,
+				952FDC12199C4C6F0058529A /* DaNotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		952FDBF4199C4C6F0058529A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				952FDBF5199C4C6F0058529A /* Foundation.framework */,
+				952FDBF7199C4C6F0058529A /* CoreGraphics.framework */,
+				952FDBF9199C4C6F0058529A /* UIKit.framework */,
+				952FDBFB199C4C6F0058529A /* CoreData.framework */,
+				952FDC13199C4C6F0058529A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		952FDBFD199C4C6F0058529A /* DaNotes */ = {
+			isa = PBXGroup;
+			children = (
+				952FDC06199C4C6F0058529A /* DNAppDelegate.h */,
+				952FDC07199C4C6F0058529A /* DNAppDelegate.m */,
+				952FDC0C199C4C6F0058529A /* Images.xcassets */,
+				952FDC09199C4C6F0058529A /* DaNotes.xcdatamodeld */,
+				952FDBFE199C4C6F0058529A /* Supporting Files */,
+				952FDC2A199C4CEF0058529A /* DNRootViewController.h */,
+				952FDC2B199C4CEF0058529A /* DNRootViewController.m */,
+				952FDC2D199C4E570058529A /* DaNotes.storyboard */,
+			);
+			path = DaNotes;
+			sourceTree = "<group>";
+		};
+		952FDBFE199C4C6F0058529A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				952FDBFF199C4C6F0058529A /* DaNotes-Info.plist */,
+				952FDC00199C4C6F0058529A /* InfoPlist.strings */,
+				952FDC03199C4C6F0058529A /* main.m */,
+				952FDC05199C4C6F0058529A /* DaNotes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		952FDC1A199C4C6F0058529A /* DaNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				952FDC20199C4C6F0058529A /* DaNotesTests.m */,
+				952FDC1B199C4C6F0058529A /* Supporting Files */,
+			);
+			path = DaNotesTests;
+			sourceTree = "<group>";
+		};
+		952FDC1B199C4C6F0058529A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				952FDC1C199C4C6F0058529A /* DaNotesTests-Info.plist */,
+				952FDC1D199C4C6F0058529A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		952FDBF1199C4C6F0058529A /* DaNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952FDC24199C4C6F0058529A /* Build configuration list for PBXNativeTarget "DaNotes" */;
+			buildPhases = (
+				952FDBEE199C4C6F0058529A /* Sources */,
+				952FDBEF199C4C6F0058529A /* Frameworks */,
+				952FDBF0199C4C6F0058529A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaNotes;
+			productName = DaNotes;
+			productReference = 952FDBF2199C4C6F0058529A /* DaNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		952FDC11199C4C6F0058529A /* DaNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952FDC27199C4C6F0058529A /* Build configuration list for PBXNativeTarget "DaNotesTests" */;
+			buildPhases = (
+				952FDC0E199C4C6F0058529A /* Sources */,
+				952FDC0F199C4C6F0058529A /* Frameworks */,
+				952FDC10199C4C6F0058529A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952FDC19199C4C6F0058529A /* PBXTargetDependency */,
+			);
+			name = DaNotesTests;
+			productName = DaNotesTests;
+			productReference = 952FDC12199C4C6F0058529A /* DaNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		952FDBEA199C4C6F0058529A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Kunwar;
+				TargetAttributes = {
+					952FDC11199C4C6F0058529A = {
+						TestTargetID = 952FDBF1199C4C6F0058529A;
+					};
+				};
+			};
+			buildConfigurationList = 952FDBED199C4C6F0058529A /* Build configuration list for PBXProject "DaNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 952FDBE9199C4C6F0058529A;
+			productRefGroup = 952FDBF3199C4C6F0058529A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				952FDBF1199C4C6F0058529A /* DaNotes */,
+				952FDC11199C4C6F0058529A /* DaNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952FDBF0199C4C6F0058529A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952FDC02199C4C6F0058529A /* InfoPlist.strings in Resources */,
+				952FDC2E199C4E570058529A /* DaNotes.storyboard in Resources */,
+				952FDC0D199C4C6F0058529A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952FDC10199C4C6F0058529A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952FDC1F199C4C6F0058529A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		952FDBEE199C4C6F0058529A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952FDC0B199C4C6F0058529A /* DaNotes.xcdatamodeld in Sources */,
+				952FDC08199C4C6F0058529A /* DNAppDelegate.m in Sources */,
+				952FDC2C199C4CEF0058529A /* DNRootViewController.m in Sources */,
+				952FDC04199C4C6F0058529A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952FDC0E199C4C6F0058529A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952FDC21199C4C6F0058529A /* DaNotesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		952FDC19199C4C6F0058529A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952FDBF1199C4C6F0058529A /* DaNotes */;
+			targetProxy = 952FDC18199C4C6F0058529A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		952FDC00199C4C6F0058529A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				952FDC01199C4C6F0058529A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		952FDC1D199C4C6F0058529A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				952FDC1E199C4C6F0058529A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		952FDC22199C4C6F0058529A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		952FDC23199C4C6F0058529A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		952FDC25199C4C6F0058529A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaNotes/DaNotes-Prefix.pch";
+				INFOPLIST_FILE = "DaNotes/DaNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		952FDC26199C4C6F0058529A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaNotes/DaNotes-Prefix.pch";
+				INFOPLIST_FILE = "DaNotes/DaNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		952FDC28199C4C6F0058529A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DaNotes.app/DaNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaNotes/DaNotes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DaNotesTests/DaNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		952FDC29199C4C6F0058529A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DaNotes.app/DaNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DaNotes/DaNotes-Prefix.pch";
+				INFOPLIST_FILE = "DaNotesTests/DaNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		952FDBED199C4C6F0058529A /* Build configuration list for PBXProject "DaNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952FDC22199C4C6F0058529A /* Debug */,
+				952FDC23199C4C6F0058529A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952FDC24199C4C6F0058529A /* Build configuration list for PBXNativeTarget "DaNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952FDC25199C4C6F0058529A /* Debug */,
+				952FDC26199C4C6F0058529A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		952FDC27199C4C6F0058529A /* Build configuration list for PBXNativeTarget "DaNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952FDC28199C4C6F0058529A /* Debug */,
+				952FDC29199C4C6F0058529A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		952FDC09199C4C6F0058529A /* DaNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				952FDC0A199C4C6F0058529A /* DaNotes.xcdatamodel */,
+			);
+			currentVersion = 952FDC0A199C4C6F0058529A /* DaNotes.xcdatamodel */;
+			path = DaNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 952FDBEA199C4C6F0058529A /* Project object */;
+}
