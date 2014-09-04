@@ -10,6 +10,10 @@
 		9507C99719B7F50000C0E175 /* DNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C99619B7F50000C0E175 /* DNLoginViewController.m */; };
 		9507C99C19B7F59200C0E175 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C99B19B7F59200C0E175 /* Note.m */; };
 		9507C99F19B7F65C00C0E175 /* DNSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C99E19B7F65C00C0E175 /* DNSignUpViewController.m */; };
+		9507C9A219B81D8F00C0E175 /* DNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C9A119B81D8F00C0E175 /* DNRootViewController.m */; };
+		9507C9A519B81E8200C0E175 /* DNNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C9A419B81E8200C0E175 /* DNNoteViewController.m */; };
+		9507C9A819B8221800C0E175 /* UIView+DNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C9A719B8221800C0E175 /* UIView+DNAdditions.m */; };
+		9507C9AB19B82B0D00C0E175 /* NSDate+DNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C9AA19B82B0D00C0E175 /* NSDate+DNAdditions.m */; };
 		952FDBF6199C4C6F0058529A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF5199C4C6F0058529A /* Foundation.framework */; };
 		952FDBF8199C4C6F0058529A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF7199C4C6F0058529A /* CoreGraphics.framework */; };
 		952FDBFA199C4C6F0058529A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF9199C4C6F0058529A /* UIKit.framework */; };
@@ -25,7 +29,6 @@
 		952FDC17199C4C6F0058529A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBFB199C4C6F0058529A /* CoreData.framework */; };
 		952FDC1F199C4C6F0058529A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 952FDC1D199C4C6F0058529A /* InfoPlist.strings */; };
 		952FDC21199C4C6F0058529A /* DaNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 952FDC20199C4C6F0058529A /* DaNotesTests.m */; };
-		952FDC2C199C4CEF0058529A /* DNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952FDC2B199C4CEF0058529A /* DNRootViewController.m */; };
 		952FDC2E199C4E570058529A /* DaNotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952FDC2D199C4E570058529A /* DaNotes.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,14 @@
 		9507C99B19B7F59200C0E175 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = Source/Note.m; sourceTree = "<group>"; };
 		9507C99D19B7F65C00C0E175 /* DNSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNSignUpViewController.h; path = Source/DNSignUpViewController.h; sourceTree = "<group>"; };
 		9507C99E19B7F65C00C0E175 /* DNSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNSignUpViewController.m; path = Source/DNSignUpViewController.m; sourceTree = "<group>"; };
+		9507C9A019B81D8F00C0E175 /* DNRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNRootViewController.h; path = Source/DNRootViewController.h; sourceTree = "<group>"; };
+		9507C9A119B81D8F00C0E175 /* DNRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNRootViewController.m; path = Source/DNRootViewController.m; sourceTree = "<group>"; };
+		9507C9A319B81E8200C0E175 /* DNNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNNoteViewController.h; path = Source/DNNoteViewController.h; sourceTree = "<group>"; };
+		9507C9A419B81E8200C0E175 /* DNNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNNoteViewController.m; path = Source/DNNoteViewController.m; sourceTree = "<group>"; };
+		9507C9A619B8221800C0E175 /* UIView+DNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+DNAdditions.h"; path = "Source/UIView+DNAdditions.h"; sourceTree = "<group>"; };
+		9507C9A719B8221800C0E175 /* UIView+DNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+DNAdditions.m"; path = "Source/UIView+DNAdditions.m"; sourceTree = "<group>"; };
+		9507C9A919B82B0D00C0E175 /* NSDate+DNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+DNAdditions.h"; path = "Source/NSDate+DNAdditions.h"; sourceTree = "<group>"; };
+		9507C9AA19B82B0D00C0E175 /* NSDate+DNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DNAdditions.m"; path = "Source/NSDate+DNAdditions.m"; sourceTree = "<group>"; };
 		952FDBF2199C4C6F0058529A /* DaNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		952FDBF5199C4C6F0058529A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		952FDBF7199C4C6F0058529A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +75,6 @@
 		952FDC1C199C4C6F0058529A /* DaNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaNotesTests-Info.plist"; sourceTree = "<group>"; };
 		952FDC1E199C4C6F0058529A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		952FDC20199C4C6F0058529A /* DaNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaNotesTests.m; sourceTree = "<group>"; };
-		952FDC2A199C4CEF0058529A /* DNRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNRootViewController.h; path = Source/DNRootViewController.h; sourceTree = "<group>"; };
-		952FDC2B199C4CEF0058529A /* DNRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNRootViewController.m; path = Source/DNRootViewController.m; sourceTree = "<group>"; };
 		952FDC2D199C4E570058529A /* DaNotes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DaNotes.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,15 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9507C99819B7F50A00C0E175 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				9507C99519B7F50000C0E175 /* DNLoginViewController.h */,
-				9507C99619B7F50000C0E175 /* DNLoginViewController.m */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
 		9507C99919B7F56300C0E175 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,13 +149,20 @@
 		952FDBFD199C4C6F0058529A /* DaNotes */ = {
 			isa = PBXGroup;
 			children = (
-				9507C99819B7F50A00C0E175 /* Login */,
 				952FDC06199C4C6F0058529A /* DNAppDelegate.h */,
 				952FDC07199C4C6F0058529A /* DNAppDelegate.m */,
-				952FDC2A199C4CEF0058529A /* DNRootViewController.h */,
-				952FDC2B199C4CEF0058529A /* DNRootViewController.m */,
+				9507C9A019B81D8F00C0E175 /* DNRootViewController.h */,
+				9507C9A119B81D8F00C0E175 /* DNRootViewController.m */,
+				9507C9A319B81E8200C0E175 /* DNNoteViewController.h */,
+				9507C9A419B81E8200C0E175 /* DNNoteViewController.m */,
+				9507C99519B7F50000C0E175 /* DNLoginViewController.h */,
+				9507C99619B7F50000C0E175 /* DNLoginViewController.m */,
 				9507C99D19B7F65C00C0E175 /* DNSignUpViewController.h */,
 				9507C99E19B7F65C00C0E175 /* DNSignUpViewController.m */,
+				9507C9A619B8221800C0E175 /* UIView+DNAdditions.h */,
+				9507C9A719B8221800C0E175 /* UIView+DNAdditions.m */,
+				9507C9A919B82B0D00C0E175 /* NSDate+DNAdditions.h */,
+				9507C9AA19B82B0D00C0E175 /* NSDate+DNAdditions.m */,
 				952FDC2D199C4E570058529A /* DaNotes.storyboard */,
 				9507C99919B7F56300C0E175 /* Model */,
 				952FDBFE199C4C6F0058529A /* Supporting Files */,
@@ -289,13 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9507C9AB19B82B0D00C0E175 /* NSDate+DNAdditions.m in Sources */,
+				9507C9A519B81E8200C0E175 /* DNNoteViewController.m in Sources */,
 				952FDC0B199C4C6F0058529A /* DaNotes.xcdatamodeld in Sources */,
 				9507C99719B7F50000C0E175 /* DNLoginViewController.m in Sources */,
+				9507C9A819B8221800C0E175 /* UIView+DNAdditions.m in Sources */,
 				9507C99F19B7F65C00C0E175 /* DNSignUpViewController.m in Sources */,
 				952FDC08199C4C6F0058529A /* DNAppDelegate.m in Sources */,
 				9507C99C19B7F59200C0E175 /* Note.m in Sources */,
-				952FDC2C199C4CEF0058529A /* DNRootViewController.m in Sources */,
 				952FDC04199C4C6F0058529A /* main.m in Sources */,
+				9507C9A219B81D8F00C0E175 /* DNRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

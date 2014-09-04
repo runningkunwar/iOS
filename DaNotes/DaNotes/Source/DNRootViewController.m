@@ -7,10 +7,12 @@
 //
 
 #import "DNRootViewController.h"
+#import "DNNoteViewController.h"
 
-@interface DNRootViewController ()
+@interface DNRootViewController ()<UIPageViewControllerDelegate, UIPageViewControllerDataSource>
 {
     UITableView *_tableView;
+    UIPageViewController *_pageViewController;
 }
 
 @end
@@ -31,32 +33,51 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-    [self.view addSubview:_tableView];
+    _pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:nil];
+    
+    DNNoteViewController *noteViewController = [DNNoteViewController new];
+    noteViewController.date = [NSDate date];
+    
+    [_pageViewController setViewControllers:@[noteViewController] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
+        
+    }];
+    _pageViewController.delegate = self;
+    _pageViewController.dataSource = self;
+    
+    [self addChildViewController:_pageViewController];
+    [self.view addSubview:_pageViewController.view];
 }
 
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
     
-    _tableView.frame = self.view.bounds;
+    _pageViewController.view.frame = self.view.bounds;
 }
 
-- (void)didReceiveMemoryWarning
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    DNNoteViewController *noteViewController = (DNNoteViewController *)viewController;
+    
+    NSDate *previousDate = [noteViewController.date dateByAddingOffset:-1];
+    
+    DNNoteViewController *beforeViewController = [DNNoteViewController new];
+    beforeViewController.date = previousDate;
+    
+    return beforeViewController;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    DNNoteViewController *noteViewController = (DNNoteViewController *)viewController;
+    
+    NSDate *nextDate = [noteViewController.date dateByAddingOffset:1];
+    
+    DNNoteViewController *nextViewController = [DNNoteViewController new];
+    nextViewController.date = nextDate;
+    
+    return nextViewController;
 }
-*/
+
 
 @end

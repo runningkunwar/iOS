@@ -26,10 +26,14 @@
         <!--Navigation Controller-->
         <scene sceneID="Af8-Or-ZZC">
             <objects>
-                <navigationController definesPresentationContext="YES" id="7KA-Iy-nof" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="7KA-Iy-nof" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J4D-G6-1SJ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5xZ-1E-WrJ">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="UFk-XJ-ldl" kind="relationship" relationship="rootViewController" id="EAT-u7-ND0"/>
                     </connections>

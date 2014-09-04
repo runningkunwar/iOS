@@ -15,4 +15,6 @@
 @property (nonatomic, retain) NSDate * date;
 @property (nonatomic, retain) NSString * text;
 
++ (instancetype)noteWithDate:(NSDate *)date;
+
 @end

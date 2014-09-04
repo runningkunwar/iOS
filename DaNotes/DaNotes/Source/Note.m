@@ -14,4 +14,10 @@
 @dynamic date;
 @dynamic text;
 
+//+ (instancetype)noteWithDate:(NSDate *)date
+//{
+//    
+//}
+
+
 @end
