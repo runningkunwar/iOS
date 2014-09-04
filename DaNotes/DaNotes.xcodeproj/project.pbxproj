@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9507C99719B7F50000C0E175 /* DNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C99619B7F50000C0E175 /* DNLoginViewController.m */; };
+		9507C99C19B7F59200C0E175 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C99B19B7F59200C0E175 /* Note.m */; };
+		9507C99F19B7F65C00C0E175 /* DNSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507C99E19B7F65C00C0E175 /* DNSignUpViewController.m */; };
 		952FDBF6199C4C6F0058529A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF5199C4C6F0058529A /* Foundation.framework */; };
 		952FDBF8199C4C6F0058529A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF7199C4C6F0058529A /* CoreGraphics.framework */; };
 		952FDBFA199C4C6F0058529A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952FDBF9199C4C6F0058529A /* UIKit.framework */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9507C99519B7F50000C0E175 /* DNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNLoginViewController.h; path = Source/DNLoginViewController.h; sourceTree = "<group>"; };
+		9507C99619B7F50000C0E175 /* DNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNLoginViewController.m; path = Source/DNLoginViewController.m; sourceTree = "<group>"; };
+		9507C99A19B7F59200C0E175 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Source/Note.h; sourceTree = "<group>"; };
+		9507C99B19B7F59200C0E175 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = Source/Note.m; sourceTree = "<group>"; };
+		9507C99D19B7F65C00C0E175 /* DNSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNSignUpViewController.h; path = Source/DNSignUpViewController.h; sourceTree = "<group>"; };
+		9507C99E19B7F65C00C0E175 /* DNSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNSignUpViewController.m; path = Source/DNSignUpViewController.m; sourceTree = "<group>"; };
 		952FDBF2199C4C6F0058529A /* DaNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		952FDBF5199C4C6F0058529A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		952FDBF7199C4C6F0058529A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,7 +58,7 @@
 		952FDC06199C4C6F0058529A /* DNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAppDelegate.h; sourceTree = "<group>"; };
 		952FDC07199C4C6F0058529A /* DNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAppDelegate.m; sourceTree = "<group>"; };
 		952FDC0A199C4C6F0058529A /* DaNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DaNotes.xcdatamodel; sourceTree = "<group>"; };
-		952FDC0C199C4C6F0058529A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		952FDC0C199C4C6F0058529A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DaNotes/Images.xcassets; sourceTree = "<group>"; };
 		952FDC12199C4C6F0058529A /* DaNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		952FDC13199C4C6F0058529A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		952FDC1C199C4C6F0058529A /* DaNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaNotesTests-Info.plist"; sourceTree = "<group>"; };
@@ -86,10 +95,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9507C99819B7F50A00C0E175 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9507C99519B7F50000C0E175 /* DNLoginViewController.h */,
+				9507C99619B7F50000C0E175 /* DNLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		9507C99919B7F56300C0E175 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				952FDC09199C4C6F0058529A /* DaNotes.xcdatamodeld */,
+				9507C99A19B7F59200C0E175 /* Note.h */,
+				9507C99B19B7F59200C0E175 /* Note.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		952FDBE9199C4C6F0058529A = {
 			isa = PBXGroup;
 			children = (
 				952FDBFD199C4C6F0058529A /* DaNotes */,
+				952FDC0C199C4C6F0058529A /* Images.xcassets */,
 				952FDC1A199C4C6F0058529A /* DaNotesTests */,
 				952FDBF4199C4C6F0058529A /* Frameworks */,
 				952FDBF3199C4C6F0058529A /* Products */,
@@ -120,14 +149,16 @@
 		952FDBFD199C4C6F0058529A /* DaNotes */ = {
 			isa = PBXGroup;
 			children = (
+				9507C99819B7F50A00C0E175 /* Login */,
 				952FDC06199C4C6F0058529A /* DNAppDelegate.h */,
 				952FDC07199C4C6F0058529A /* DNAppDelegate.m */,
-				952FDC0C199C4C6F0058529A /* Images.xcassets */,
-				952FDC09199C4C6F0058529A /* DaNotes.xcdatamodeld */,
-				952FDBFE199C4C6F0058529A /* Supporting Files */,
 				952FDC2A199C4CEF0058529A /* DNRootViewController.h */,
 				952FDC2B199C4CEF0058529A /* DNRootViewController.m */,
+				9507C99D19B7F65C00C0E175 /* DNSignUpViewController.h */,
+				9507C99E19B7F65C00C0E175 /* DNSignUpViewController.m */,
 				952FDC2D199C4E570058529A /* DaNotes.storyboard */,
+				9507C99919B7F56300C0E175 /* Model */,
+				952FDBFE199C4C6F0058529A /* Supporting Files */,
 			);
 			path = DaNotes;
 			sourceTree = "<group>";
@@ -259,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				952FDC0B199C4C6F0058529A /* DaNotes.xcdatamodeld in Sources */,
+				9507C99719B7F50000C0E175 /* DNLoginViewController.m in Sources */,
+				9507C99F19B7F65C00C0E175 /* DNSignUpViewController.m in Sources */,
 				952FDC08199C4C6F0058529A /* DNAppDelegate.m in Sources */,
+				9507C99C19B7F59200C0E175 /* Note.m in Sources */,
 				952FDC2C199C4CEF0058529A /* DNRootViewController.m in Sources */,
 				952FDC04199C4C6F0058529A /* main.m in Sources */,
 			);
@@ -460,6 +494,7 @@
 				952FDC26199C4C6F0058529A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		952FDC27199C4C6F0058529A /* Build configuration list for PBXNativeTarget "DaNotesTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +503,7 @@
 				952FDC29199C4C6F0058529A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
