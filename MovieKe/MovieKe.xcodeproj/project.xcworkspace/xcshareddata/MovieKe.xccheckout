@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>994BAC03-5EA9-4741-BA39-403A5F4859D7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MovieKe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>359E94F6F18A757C2B7914110127FB9F6F9FFEC1</key>
+		<string>https://github.com/runningkunwar/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MovieKe/MovieKe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>359E94F6F18A757C2B7914110127FB9F6F9FFEC1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/runningkunwar/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>359E94F6F18A757C2B7914110127FB9F6F9FFEC1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>359E94F6F18A757C2B7914110127FB9F6F9FFEC1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
