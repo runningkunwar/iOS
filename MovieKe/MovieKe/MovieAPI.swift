@@ -12,5 +12,5 @@ protocol MovieAPI {
     
     func moviesInTheaterApi() -> String
     func upcomingMovesApi() -> String
-    
+    func movieFromDict(dict: [String: AnyObject]) -> [Movie];
 }

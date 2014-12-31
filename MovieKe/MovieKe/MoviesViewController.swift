@@ -9,30 +9,46 @@
 import UIKit
 
 class MoviesViewController: UIViewController, UIPageViewControllerDataSource {
-    var pageViewController = UIPageViewController()
+    var pageViewController: UIPageViewController = UIPageViewController()
     var movies: Array<Movie> = []
     let movieService = MovieService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.showBorder()
-        
-        var movieViewController = MovieViewController(index: 0)
-        pageViewController.setViewControllers([movieViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: true) { (complete) -> Void in
-        }
-        pageViewController.dataSource = self
-        pageViewController.view.showBorderWithColor(UIColor.greenColor())
-        self.addChildViewController(pageViewController)
-        self.view.addSubview(pageViewController.view)
+        self.view.backgroundColor = UIColor.blackColor()
         
         movieService.fetchMoviesInTheater { (movies) -> () in
-            self.movies = movies
+            self.movies += movies
+            
+            self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as UIPageViewController
+            
+            var movieViewController = self.pageContentViewControllerAtIndex(0)
+            movieViewController.movie = movies[0]
+            self.pageViewController.setViewControllers([movieViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: true) { (complete) -> Void in
+            }
+            
+            self.pageViewController.dataSource = self
+            
+            self.addChildViewController(self.pageViewController)
+            self.view.addSubview(self.pageViewController.view)
+            self.pageViewController.didMoveToParentViewController(self)
         }
+    }
+    
+     override func viewWillAppear(animated: Bool) {
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func pageContentViewControllerAtIndex(index: Int) -> MovieViewController {
+        var movieViewController: MovieViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MovieViewController") as MovieViewController
+        movieViewController.index = index
+        return movieViewController
     }
     
 
@@ -55,9 +71,10 @@ class MoviesViewController: UIViewController, UIPageViewControllerDataSource {
         }
         
         let index = currentIndex - 1
-        let movieViewController = MovieViewController(index: index)
+        var movieViewController = self.pageContentViewControllerAtIndex(index)
         movieViewController.movie = self.movies[index]
-        
+        movieViewController.title = String(index)
+
         return movieViewController
     }
     
@@ -70,9 +87,9 @@ class MoviesViewController: UIViewController, UIPageViewControllerDataSource {
         }
         
         let index = currentIndex + 1
-        let movieViewController = MovieViewController(index: index)
+        var movieViewController = self.pageContentViewControllerAtIndex(index)
         movieViewController.movie = self.movies[index]
-        
+
         return movieViewController
     }
     
@@ -80,4 +97,7 @@ class MoviesViewController: UIViewController, UIPageViewControllerDataSource {
         return self.movies.count;
     }
     
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+       return 0
+    }
 }

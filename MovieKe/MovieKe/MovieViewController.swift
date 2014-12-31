@@ -12,38 +12,33 @@ class MovieViewController: UIViewController {
 
     var movie = Movie()
     var index: Int = 0
+    @IBOutlet weak var moviePosterView: UIImageView!
     
-    
-    required init(coder aDecoder: NSCoder)
-    {
-        super.init(coder: aDecoder)
-    }
-    
-    init(index: Int) {
-        self.index = index
-        super.init(nibName: "", bundle: nil)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.showBorder()
+        
+//        self.view.backgroundColor = UIColor.blackColor()
         // Do any additional setup after loading the view.
+        if movie.posterUrl != "" {
+            self.updateMovieView()
+        }
+        
     }
-
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func updateMovieView() {
+        self.moviePosterView.setImageFromURL(movie.posterUrl)
     }
-    */
 
 }

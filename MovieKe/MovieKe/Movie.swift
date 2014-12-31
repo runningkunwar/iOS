@@ -10,32 +10,8 @@ import Foundation
 
 class Movie {
     var title = ""
-    var id = 0
+    var id = ""
     var posterUrl = ""
-    
-    class func movieWithDictionary(dictionary: [String : AnyObject])-> Movie {
-        var movie = Movie()
-        
-        
-        return movie;
-    }
+    var userRating = 0
+    var criticRating = 0
 }
-
-//{
-//"page": 1,
-//"results": [
-//{
-//"adult": false,
-//"backdrop_path": "/wBZ9jtFrsxth4VQA724TeBb5T2L.jpg",
-//"id": 198663,
-//"original_title": "The Maze Runner",
-//"release_date": "2014-09-19",
-//"poster_path": "/coss7RgL0NH6g4fC2s5atvf3dFO.jpg",
-//"popularity": 47.8332349712059,
-//"title": "The Maze Runner",
-//"vote_average": 7.4,
-//"vote_count": 426
-//},
-//
-//
-//}

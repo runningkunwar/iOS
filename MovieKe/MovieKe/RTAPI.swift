@@ -12,7 +12,7 @@ import Foundation
 class RTAPI : MovieAPI{
     
     private func baseApiUrl() -> String {
-        let baseApiUrl = "http://api.themoviedb.org/3/"
+        let baseApiUrl = "http://api.rottentomatoes.com/api/public/v1.0/"
         return baseApiUrl;
     }
     
@@ -22,12 +22,14 @@ class RTAPI : MovieAPI{
     }
     
     private func apiKey() -> String {
-        let apiKey = "0e3feb05ea5ca313c072a0946bd9d29c"
+        let apiKey = "527a6pzhux8fkq2qq7yxcv6c"
         return apiKey;
     }
     
     func moviesInTheaterApi() -> String {
-        let api = baseApiUrl() + "movie/popular?" + "api_key=" + apiKey()
+//        http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=527a6pzhux8fkq2qq7yxcv6c
+//        http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=527a6pzhux8fkq2qq7yxcv6c
+        let api = baseApiUrl() + "lists/movies/in_theaters.json?" + "apikey=" + apiKey()
         return api
     }
     
@@ -35,5 +37,30 @@ class RTAPI : MovieAPI{
         let api = baseApiUrl() + "movie/popular?" + "api_key=" + apiKey()
         return api
     }
+    
+    func movieFromDict(dict: [String: AnyObject]) -> [Movie] {
+        var movies: [Movie] = []
+        var movieArray = dict["movies"] as [NSDictionary]
+        
+        for movieDict in movieArray {
+            var movie = Movie()
+            movie.id = movieDict["id"] as String
+            movie.title = movieDict["title"] as String
+            
+            if let posterDict: AnyObject = movieDict["posters"] {
+                var poster = posterDict["original"] as String
+                //this is a hack to get original movie poster.
+                poster = poster.stringByReplacingOccurrencesOfString("tmb", withString: "org", options: NSStringCompareOptions.LiteralSearch, range: nil)
+                
+                movie.posterUrl = poster;
+            }
+            
+            movies.append(movie)
+        }
+        
+        
+        return movies
+    }
+
     
 }

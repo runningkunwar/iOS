@@ -20,6 +20,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="127" y="144"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="O4r-q2-cY2">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NYL-Zf-d1P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGM-oz-cGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="144"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="SYr-zV-jfa">
+            <objects>
+                <viewController storyboardIdentifier="MovieViewController" id="UVd-Xj-05D" customClass="MovieViewController" customModule="MovieKe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W5H-Br-xCZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="X3E-qx-CGI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Ec-Ad-THd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WHl-hd-gDg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WHl-hd-gDg" firstAttribute="leading" secondItem="5Ec-Ad-THd" secondAttribute="leading" id="4Lc-lX-tE5"/>
+                            <constraint firstItem="WHl-hd-gDg" firstAttribute="top" secondItem="5Ec-Ad-THd" secondAttribute="top" id="Pdz-Nk-Ef7"/>
+                            <constraint firstItem="WHl-hd-gDg" firstAttribute="trailing" secondItem="5Ec-Ad-THd" secondAttribute="trailing" id="p7q-ij-Eg3"/>
+                            <constraint firstItem="X3E-qx-CGI" firstAttribute="top" secondItem="WHl-hd-gDg" secondAttribute="bottom" id="xpP-61-Ej1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="moviePosterView" destination="WHl-hd-gDg" id="ilD-AO-S3e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDU-tj-RJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="129"/>
         </scene>
     </scenes>
 </document>

@@ -9,7 +9,7 @@
 import Foundation
 
 typealias MoviesClosure = (movies : [Movie]) -> ()
-typealias CompletionClosure = (data: AnyObject) -> ()
+typealias CompletionClosure = (dataDict: [String: AnyObject]) -> ()
 
 class MovieService {
     let movieApi = RTAPI()
@@ -21,10 +21,11 @@ class MovieService {
         if let apiUrl = NSURL(string: api) {
             request = NSURLRequest(URL: apiUrl)
             
-            callApi(request, completionClosure: { (data) -> () in
-                
-                completionBlock(movies: [])
-                
+            self.callApi(request, completionClosure: { (dataDict) -> () in
+                //get movies from data
+                var movies = self.movieApi.movieFromDict(dataDict)
+                completionBlock(movies: movies)
+
             });
         }
         
@@ -39,11 +40,9 @@ class MovieService {
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue()) { (response, data, error) -> Void in
             
-            if let jsonObject: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) {
-
-                completionClosure(data: jsonObject)
-            }
-
+            let jsonDict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as [String: AnyObject]
+    
+            completionClosure(dataDict: jsonDict)
         }
     }
     

@@ -36,5 +36,34 @@ class TMDBAPI : MovieAPI{
         let api = baseApiUrl() + "movie/popular?" + "api_key=" + apiKey()
         return api
     }
+ 
+    func movieFromDict([String: AnyObject]) -> Movie {
+        
+        return Movie()
+    }
     
+    func movieFromDict(dict: [String: AnyObject]) -> [Movie] {
+        var movies: [Movie] = []
+        var movieArray = dict["movies"] as [NSDictionary]
+        
+        for movieDict in movieArray {
+            var movie = Movie()
+            movie.id = dict["id"] as String
+            movie.title = dict["title"] as String
+            
+            if let posterDict: AnyObject = dict["posters"] {
+                var poster = posterDict["original"] as String
+                //this is a hack to get original movie poster.
+                poster.stringByReplacingOccurrencesOfString("tmb", withString: "org", options: NSStringCompareOptions.LiteralSearch, range: nil)
+                
+                movie.posterUrl = poster;
+            }
+            
+            movies.append(movie)
+        }
+        
+        
+        return movies
+    }
+
 }
